@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sql_db/View/Screens/splashScreen.dart';
 
 import 'View/Screens/HomeScreen.dart';
 void main()
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: [
-        GetPage(name: '/', page: () => HomePage(),)
+        GetPage(name: '/', page: () => SplashPage(),),
+        GetPage(name: '/home', page: () => HomePage(),)
       ],
     );
   }
