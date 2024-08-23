@@ -27,6 +27,8 @@ class HomePage extends StatelessWidget {
                 children: [
                   TextField(
                     controller: controller.txtAmount,
+                    keyboardType: TextInputType.number,
+                    textInputAction: TextInputAction.next,
                     decoration: InputDecoration(
                       hintText: 'Amount',
                       focusColor: Colors.green,
